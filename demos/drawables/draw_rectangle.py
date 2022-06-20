@@ -2,6 +2,7 @@ from sodic.drawables import Rectangle
 
 from PIL import Image, ImageDraw
 
+
 def draw_simple_rectangle():
     rectangle = Rectangle(10, 10, 60, 60, "red")
 
@@ -10,7 +11,7 @@ def draw_simple_rectangle():
 
     rectangle.draw(image_draw)
 
-    image.save("simple_battery.png")
+    image.save("simple_rectangle.png")
 
 
 if __name__ == "__main__":

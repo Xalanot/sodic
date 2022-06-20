@@ -1,0 +1,24 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.0.1
+  hooks:
+  - id: check-yaml
+  - id: check-json
+  - id: end-of-file-fixer
+  - id: mixed-line-ending
+  - id: trailing-whitespace
+  - id: no-commit-to-branch
+- repo: local
+  hooks:
+  - id: format
+    name: Format
+    entry: poetry run format
+    pass_filenames: true
+    language: system
+    types: [python]
+  - id: lint
+    name: Lint
+    entry: poetry run lint
+    pass_filenames: true
+    language: system
+    types: [python]
