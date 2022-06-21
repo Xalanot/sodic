@@ -4,8 +4,9 @@ from PIL import ImageDraw
 
 
 class Drawable(ABC):
-    """Abstract base class for drawable objects"""
+    """Abstract base class for drawable objects."""
+
     @abstractmethod
-    def draw(image: ImageDraw.Draw):
+    def draw(self, image: ImageDraw.Draw):
         """Draws itself on an image."""
         pass

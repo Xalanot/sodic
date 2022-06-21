@@ -27,6 +27,7 @@ strictness=short
 # Bandit should allow assert in tests
 per-file-ignores =
     # D100,D101,D102,D103,D104,D107 - missing docstrings are OK for tests
+    demos/*:D100,D101,D102,D103,D104,D107
     tests/*:D100,D101,D102,D103,D104,D107
     ci/*:D100,D101,D102,D103,D104,D107
 
@@ -38,4 +39,5 @@ per-file-ignores =
 # ANN201, ANN204 are covered by darglint
 # S101: use of assert is OK, but you are encouraged to throw a more appropriate exception
 # B011: assert(False) can be OK
-ignore = E501,E203,W503,ANN101,ANN204,ANN201,S101,B011
+# No Docstring on module level
+ignore = E501,E203,W503,ANN101,ANN204,ANN201,S101,B011,D100,D104,D107

@@ -8,6 +8,7 @@ from .drawable import Drawable
 @dataclass
 class Triangle(Drawable):
     """Object representing a triangle."""
+
     x1: float
     y1: float
     x2: float
@@ -18,8 +19,11 @@ class Triangle(Drawable):
 
     def draw(self, image: ImageDraw) -> None:
         """Draws itself on an image."""
-        image.polygon(xy=[
-            (self.x1, self.y1), 
-            (self.x2, self.y2),
-            (self.x3, self.y3),
-        ], fill=self.color)
+        image.polygon(
+            xy=[
+                (self.x1, self.y1),
+                (self.x2, self.y2),
+                (self.x3, self.y3),
+            ],
+            fill=self.color,
+        )
