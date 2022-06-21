@@ -1,6 +1,6 @@
-from sodic.drawables import Rectangle
-
 from PIL import Image, ImageDraw
+
+from sodic.drawables import Rectangle
 
 
 def draw_simple_rectangle():

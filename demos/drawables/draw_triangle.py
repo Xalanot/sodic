@@ -1,6 +1,6 @@
-from sodic.drawables import Triangle
-
 from PIL import Image, ImageDraw
+
+from sodic.drawables import Triangle
 
 
 def draw_simple_triangle():
