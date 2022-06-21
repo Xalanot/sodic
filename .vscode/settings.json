@@ -1,0 +1,19 @@
+{
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.linting.flake8Args": [
+        "--config=./.flake8"
+    ],
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./",
+        "-p",
+        "*_test.py"
+    ],
+    "python.testing.unittestEnabled": true,
+    "python.testing.pytestArgs": [
+        "./"
+    ],
+    "python.testing.pytestEnabled": true
+}
