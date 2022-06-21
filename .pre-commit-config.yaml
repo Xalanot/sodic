@@ -22,3 +22,10 @@ repos:
     pass_filenames: true
     language: system
     types: [python]
+  - id: test
+    name: Test
+    entry: poetry run test
+    pass_filenames: false
+    language: system
+    types: [python]
+    stages: [push]
