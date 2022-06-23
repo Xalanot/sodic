@@ -1,4 +1,4 @@
-from typing import List
+from typing import Generator, List
 
 from PIL import Image, ImageDraw
 
@@ -18,6 +18,11 @@ class SodicImage:
         self.width = width
         self.height = height
         self.drawables = drawables
+
+    def iter_drawables(self) -> Generator[Drawable, None, None]:
+        """Generator method for iterating over drawables."""
+        for drawable in self.drawables:
+            yield drawable
 
     def draw(self) -> Image.Image:
         """Draws the image on a white background."""

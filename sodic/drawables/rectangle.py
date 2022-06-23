@@ -29,6 +29,11 @@ class Rectangle(Drawable):
         )
 
     @property
+    def category(self) -> str:
+        """Returns the name of the category this object belongs."""
+        return "rectangle"
+
+    @property
     def segmentation(self) -> Segmentation:
         """Calculates the segmentation outline in the format [x1,y1,x2,y2,...]."""
         return Segmentation(

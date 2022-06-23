@@ -44,6 +44,11 @@ class Circle(Drawable):
         image.ellipse(xy=[upper_left_corner, lower_right_corner], fill=self.color)
 
     @property
+    def category(self) -> str:
+        """Returns the name of the category this object belongs."""
+        return "circle"
+
+    @property
     def segmentation(self) -> Segmentation:
         """Calculates the segmentation outline in the format [x1,y1,x2,y2,...].
 
