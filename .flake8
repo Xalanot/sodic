@@ -26,10 +26,11 @@ strictness=short
 
 # Bandit should allow assert in tests
 per-file-ignores =
-    # D100,D101,D102,D103,D104,D107 - missing docstrings are OK for tests
+    # D100,D101,D102,D103,D104,D107 - missing docstrings
     demos/*:D100,D101,D102,D103,D104,D107
     tests/*:D100,D101,D102,D103,D104,D107
     ci/*:D100,D101,D102,D103,D104,D107
+    examples/*:D100,D101,D102,D103,D104,D107
 
     # F401 - Stop Flake8 complaining about "imported but unused"
     __init__.py:F401
@@ -40,4 +41,4 @@ per-file-ignores =
 # S101: use of assert is OK, but you are encouraged to throw a more appropriate exception
 # B011: assert(False) can be OK
 # No Docstring on module level
-ignore = E501,E203,W503,ANN101,ANN204,ANN201,S101,B011,D100,D104,D107
+ignore = E501,E203,W503,ANN101,ANN204,ANN201,S101,B011,D100,D104,D107,D411,D413

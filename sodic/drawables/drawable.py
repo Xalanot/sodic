@@ -15,6 +15,11 @@ class Drawable(ABC):
 
     @property
     @abstractmethod
+    def category(self) -> str:
+        """Returns the name of the category this object belongs."""
+
+    @property
+    @abstractmethod
     def segmentation(self) -> Segmentation:
         """Calculates the segmentation outline in the format [x1,y1,x2,y2,...]."""
         pass
