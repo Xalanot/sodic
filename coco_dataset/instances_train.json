@@ -1,0 +1,88 @@
+{
+    "images": [
+        {
+            "file_name": "image0.png",
+            "height": 100,
+            "width": 100,
+            "id": 0,
+            "license": 0
+        }
+    ],
+    "annotations": [
+        {
+            "segmentation": [
+                [
+                    10,
+                    10,
+                    60,
+                    10,
+                    60,
+                    60,
+                    10,
+                    60
+                ]
+            ],
+            "area": 2500,
+            "bbox": [
+                10,
+                10,
+                50,
+                50
+            ],
+            "image_id": 0,
+            "id": 0,
+            "category_id": 0
+        },
+        {
+            "segmentation": [
+                [
+                    70,
+                    70,
+                    80,
+                    70,
+                    80,
+                    80,
+                    70,
+                    80
+                ]
+            ],
+            "area": 100,
+            "bbox": [
+                70,
+                70,
+                10,
+                10
+            ],
+            "image_id": 0,
+            "id": 1,
+            "category_id": 0
+        }
+    ],
+    "categories": [
+        {
+            "id": 0,
+            "name": "rectangle",
+            "supercategory": "geometry"
+        },
+        {
+            "id": 1,
+            "name": "circle",
+            "supercategory": "geometry"
+        }
+    ],
+    "info": {
+        "year": 2022,
+        "version": "",
+        "description": "",
+        "contributor": "",
+        "url": "",
+        "date_created": ""
+    },
+    "licenses": [
+        {
+            "id": 0,
+            "name": "",
+            "url": ""
+        }
+    ]
+}

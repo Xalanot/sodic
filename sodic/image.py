@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 from typing import Generator, List
 
 from PIL import Image, ImageDraw
@@ -5,6 +6,7 @@ from PIL import Image, ImageDraw
 from sodic.drawables import Drawable
 
 
+@dataclass
 class SodicImage:
     """Image class containing the different drawable objects in a scene.
 
@@ -14,10 +16,9 @@ class SodicImage:
         drawables: Drawables representing the objects in the scene.
     """
 
-    def __init__(self, width: int, height: int, drawables: List[Drawable]) -> None:
-        self.width = width
-        self.height = height
-        self.drawables = drawables
+    width: int
+    height: int
+    drawables: List[Drawable]
 
     def iter_drawables(self) -> Generator[Drawable, None, None]:
         """Generator method for iterating over drawables."""
